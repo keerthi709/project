@@ -277,16 +277,18 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	row-gap: 50px;
 }
 #projects .project-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 80%;
+	width: 70%;
 	margin: 20px auto;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 20px;
+	
 }
 #projects .project-info {
 	padding: 30px;
@@ -297,7 +299,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	color: rgb(239, 233, 233);
 }
 #projects .project-info h1 {
 	font-size: 4rem;
@@ -308,6 +310,13 @@ p {
 	font-weight: 500;
 	margin-top: 10px;
 }
+#projects .project-img {
+	flex-basis: 100%;
+	height: 300px;
+	overflow: hidden;
+	position: absolute;
+}
+
 /* End Projects section */
 
 /* About Section */
@@ -506,6 +515,7 @@ p {
 	}
 	#projects .project-item:nth-child(even) {
 		flex-direction: row-reverse;
+		
 	}
 	#projects .project-item {
 		height: 400px;
